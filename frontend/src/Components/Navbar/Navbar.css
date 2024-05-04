@@ -17,6 +17,11 @@
     font-weight: 600;
 }
 
+.nav-logo-img {
+    max-height: 120px; 
+    height: auto; 
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
