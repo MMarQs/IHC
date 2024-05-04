@@ -183,7 +183,7 @@ let all_product = [
   {
     id: 19,
     name: "Shang-Chi And The Legend Of The Ten Rings",
-    category: "physical",
+    category: "physical-copy",
     image: p19_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -191,7 +191,7 @@ let all_product = [
   {
     id: 20,
     name: "Black Widow",
-    category: "physical",
+    category: "physical-copy",
     image: p20_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -199,7 +199,7 @@ let all_product = [
   {
     id: 21,
     name: "No Time To Die",
-    category: "physical",
+    category: "physical-copy",
     image: p21_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -207,7 +207,7 @@ let all_product = [
   {
     id: 22,
     name: "Spider-Man: No Way Home",
-    category: "physical",
+    category: "physical-copy",
     image: p22_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -215,7 +215,7 @@ let all_product = [
   {
     id: 23,
     name: "The Matrix Resurrections",
-    category: "physical",
+    category: "physical-copy",
     image: p23_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -223,7 +223,7 @@ let all_product = [
   {
     id: 24,
     name: "Encanto",
-    category: "physical",
+    category: "physical-copy",
     image: p24_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -231,7 +231,7 @@ let all_product = [
   {
     id: 25,
     name: "Raya And The Last Dragon",
-    category: "physical",
+    category: "physical-copy",
     image: p25_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -239,7 +239,7 @@ let all_product = [
   {
     id: 26,
     name: "Army Of The Dead",
-    category: "physical",
+    category: "physical-copy",
     image: p26_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -247,7 +247,7 @@ let all_product = [
   {
     id: 27,
     name: "Luca",
-    category: "physical",
+    category: "physical-copy",
     image: p27_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -255,7 +255,7 @@ let all_product = [
   {
     id: 28,
     name: "Space Jam: A New Legacy",
-    category: "physical",
+    category: "physical-copy",
     image: p28_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -263,7 +263,7 @@ let all_product = [
   {
     id: 29,
     name: "The Green Knight",
-    category: "physical",
+    category: "physical-copy",
     image: p29_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -271,7 +271,7 @@ let all_product = [
   {
     id: 30,
     name: "Eternals",
-    category: "physical",
+    category: "physical-copy",
     image: p30_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -279,7 +279,7 @@ let all_product = [
   {
     id: 31,
     name: "Halloween Kills",
-    category: "physical",
+    category: "physical-copy",
     image: p31_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -287,7 +287,7 @@ let all_product = [
   {
     id: 32,
     name: "Free Guy",
-    category: "physical",
+    category: "physical-copy",
     image: p32_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -295,7 +295,7 @@ let all_product = [
   {
     id: 33,
     name: "The Last Duel",
-    category: "physical",
+    category: "physical-copy",
     image: p33_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -303,7 +303,7 @@ let all_product = [
   {
     id: 34,
     name: "Halloween Ends",
-    category: "physical",
+    category: "physical-copy",
     image: p34_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -311,7 +311,7 @@ let all_product = [
   {
     id: 35,
     name: "Morbius",
-    category: "physical",
+    category: "physical-copy",
     image: p35_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -319,7 +319,7 @@ let all_product = [
   {
     id: 36,
     name: "Thor: Love and Thunder",
-    category: "physical",
+    category: "physical-copy",
     image: p36_img,
     new_price: 85.0,
     old_price: 120.5,
