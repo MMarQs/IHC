@@ -6,6 +6,7 @@ import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react';
 import { ShopContext } from '../../Context/ShopContext';
+import SearchBar from '../SearchBar/SearchBar'
 
 export const Navbar = () => {
     const { getTotalCartItems } = useContext(ShopContext);
@@ -22,6 +23,7 @@ export const Navbar = () => {
             <li onClick={()=>{setMenu("streaming")}}><Link style={{ textDecoration: 'none' }} to="/streaming">Streaming</Link>{menu === "streaming" ? <hr/> : <></>}</li>
             <li onClick={()=>{setMenu("physical-copy")}}><Link style={{ textDecoration: 'none' }} to="/physical-copy">Physical Copy</Link>{menu === "physical-copy" ? <hr/> : <></>}</li>
         </ul>
+        <SearchBar/>
         <div className='nav-login-cart'>
             <Link to="/login"><button>Login</button></Link>
             <Link to="/cart"><img src={cart_icon} alt=''/></Link>
