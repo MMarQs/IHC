@@ -50,6 +50,7 @@ let all_product = [
     movie_director: "Christopher Nolan",
     movie_runtime: "2h 30min",
     movie_rating: "7.5",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 2,
@@ -65,6 +66,7 @@ let all_product = [
     movie_director: "Patty Jenkins",
     movie_runtime: "2h 31min",
     movie_rating: "5.4",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 3,
@@ -80,6 +82,7 @@ let all_product = [
     movie_director: "Pete Docter, Kemp Powers",
     movie_runtime: "1h 40min",
     movie_rating: "8.1",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 4,
@@ -95,6 +98,7 @@ let all_product = [
     movie_director: "Chloé Zhao",
     movie_runtime: "1h 47min",
     movie_rating: "7.4",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 5,
@@ -110,6 +114,7 @@ let all_product = [
     movie_director: "Cathy Yan",
     movie_runtime: "1h 49min",
     movie_rating: "6.1",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 6,
@@ -125,6 +130,7 @@ let all_product = [
     movie_director: "Leigh Whannell",
     movie_runtime: "2h 4min",
     movie_rating: "7.1",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 7,
@@ -140,6 +146,7 @@ let all_product = [
     movie_director: "Harry Bradbeer",
     movie_runtime: "2h 3min",
     movie_rating: "6.6",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 8,
@@ -155,6 +162,7 @@ let all_product = [
     movie_director: "Aaron Sorkin",
     movie_runtime: "2h 9min",
     movie_rating: "7.8",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 9,
@@ -170,6 +178,7 @@ let all_product = [
     movie_director: "Spike Lee",
     movie_runtime: "2h 34min",
     movie_rating: "6.5",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 10,
@@ -185,6 +194,7 @@ let all_product = [
     movie_director: "Paul Greengrass",
     movie_runtime: "1h 58min",
     movie_rating: "6.8",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 11,
@@ -200,6 +210,7 @@ let all_product = [
     movie_director: "David Fincher",
     movie_runtime: "2h 11min",
     movie_rating: "7.0",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 12,
@@ -215,6 +226,7 @@ let all_product = [
     movie_director: "Darius Marder",
     movie_runtime: "2h 10min",
     movie_rating: "7.8",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 13,
@@ -230,6 +242,7 @@ let all_product = [
     movie_director: "Shaka King",
     movie_runtime: "2h 6min",
     movie_rating: "7.5",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 14,
@@ -245,6 +258,7 @@ let all_product = [
     movie_director: "Adam Wingard",
     movie_runtime: "1h 53min",
     movie_rating: "6.4",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 15,
@@ -260,6 +274,7 @@ let all_product = [
     movie_director: "Denis Villeneuve",
     movie_runtime: "2h 35min",
     movie_rating: "8.3",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 16,
@@ -275,6 +290,7 @@ let all_product = [
     movie_director: "Craig Gillespie",
     movie_runtime: "2h 14min",
     movie_rating: "7.4",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 17,
@@ -290,6 +306,7 @@ let all_product = [
     movie_director: "John Krasinski",
     movie_runtime: "1h 37min",
     movie_rating: "7.4",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 18,
@@ -304,7 +321,8 @@ let all_product = [
     movie_stars: "Margot Robbie, Idris Elba, John Cena",
     movie_director: "James Gunn",
     movie_runtime: "2h 12mim",
-    movie_rating: "7.2"
+    movie_rating: "7.2",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 19,
@@ -320,6 +338,7 @@ let all_product = [
     movie_director: "Destin Daniel Cretton",
     movie_runtime: "2h 12min",
     movie_rating: "7.6",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 20,
@@ -335,6 +354,7 @@ let all_product = [
     movie_director: "Cate Shortland",
     movie_runtime: "2h 14min",
     movie_rating: "6.7",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 21,
@@ -350,6 +370,7 @@ let all_product = [
     movie_director: "Cary Joji Fukunaga",
     movie_runtime: "2h 43min",
     movie_rating: "7.5",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 22,
@@ -365,6 +386,7 @@ let all_product = [
     movie_director: "Jon Watts",
     movie_runtime: "2h 28min",
     movie_rating: "8.5",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 23,
@@ -380,6 +402,7 @@ let all_product = [
     movie_director: "Lana Wachowski",
     movie_runtime: "2h 28min",
     movie_rating: "5.7",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 24,
@@ -395,6 +418,7 @@ let all_product = [
     movie_director: "Jared Bush, Byron Howard",
     movie_runtime: "1h 42min",
     movie_rating: "7.7",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 25,
@@ -410,6 +434,7 @@ let all_product = [
     movie_director: "Don Hall, Carlos López Estrada",
     movie_runtime: "1h 47min",
     movie_rating: "7.4",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 26,
@@ -425,6 +450,7 @@ let all_product = [
     movie_director: "Zack Snyder",
     movie_runtime: "2h 28min",
     movie_rating: "5.8",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 27,
@@ -440,6 +466,7 @@ let all_product = [
     movie_director: "Enrico Casarosa",
     movie_runtime: "1h 35min",
     movie_rating: "7.5",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 28,
@@ -455,6 +482,7 @@ let all_product = [
     movie_director: "Malcolm D. Lee",
     movie_runtime: "1h 55min",
     movie_rating: "4.4",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 29,
@@ -470,6 +498,7 @@ let all_product = [
     movie_director: "David Lowery",
     movie_runtime: "2h 10min",
     movie_rating: "6.7",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 30,
@@ -485,6 +514,7 @@ let all_product = [
     movie_director: "Chloé Zhao",
     movie_runtime: "2h 37min",
     movie_rating: "6.7",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 31,
@@ -500,6 +530,7 @@ let all_product = [
     movie_director: "David Gordon Green",
     movie_runtime: "1h 45min",
     movie_rating: "6.1",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 32,
@@ -515,6 +546,7 @@ let all_product = [
     movie_director: "Shawn Levy",
     movie_runtime: "1h 55min",
     movie_rating: "7.5",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 33,
@@ -530,6 +562,7 @@ let all_product = [
     movie_director: "Ridley Scott",
     movie_runtime: "2h 32min",
     movie_rating: "7.4",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 34,
@@ -545,6 +578,7 @@ let all_product = [
     movie_director: "David Gordon Green",
     movie_runtime: "1h 45min",
     movie_rating: "6.1",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 35,
@@ -560,6 +594,7 @@ let all_product = [
     movie_director: "Daniel Espinosa",
     movie_runtime: "1h 48min",
     movie_rating: "5.4",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
   {
     id: 36,
@@ -575,6 +610,7 @@ let all_product = [
     movie_director: "Taika Waititi",
     movie_runtime: "2h 11min",
     movie_rating: "7.6",
+    review_count: Math.floor(Math.random() * 800) + 100,
   },
 ];
 

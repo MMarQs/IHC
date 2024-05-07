@@ -1,12 +1,34 @@
 import React, { useContext } from 'react'
 import './ProductDisplay.css'
 import star_icon from '../Assets/star_icon.png'
+import half_star_icon from '../Assets/half_star_icon.png'
 import star_dull_icon from '../Assets/star_dull_icon.png'
 import { ShopContext } from '../../Context/ShopContext'
 
 export const ProductDisplay = (props) => {
     const {product} = props;
     const {addToCart} = useContext(ShopContext);
+
+    const renderStars = (rating) => {
+        let stars = [];
+        let fullStars = Math.floor(rating);
+        let halfStars = ((rating - fullStars) >= 0.5 && (rating - fullStars) < 1) ? 1 : 0;
+        let dullStars = 5 - fullStars - halfStars;
+        for (let i = 0; i < fullStars; i++) {
+            stars.push(<img src={star_icon} alt='star' key={`full${i}`} />);
+        }
+    
+        for (let i = 0; i < halfStars; i++) {
+            stars.push(<img src={half_star_icon} alt='half star' key={`half${i}`} />);
+        }
+    
+        for (let i = 0; i < dullStars; i++) {
+            stars.push(<img src={star_dull_icon} alt='dull star' key={`dull${i}`} />);
+        }
+    
+        return stars;
+    }
+
     return (
     <div className='productdisplay'>
         <div className='productdisplay-left'>
@@ -23,12 +45,9 @@ export const ProductDisplay = (props) => {
         <div className='productdisplay-right'>
             <h1>{product.name}</h1>
             <div className='productdisplay-right-star'>
-                <img src={star_icon} alt=''/>
-                <img src={star_icon} alt=''/>
-                <img src={star_icon} alt=''/>
-                <img src={star_icon} alt=''/>
-                <img src={star_dull_icon} alt=''/>
-                <p>(122)</p>
+                {(product.movie_rating / 2).toFixed(1)}
+                {renderStars(product.movie_rating/2)}
+                <p>({product.review_count})</p>
             </div>
             <div className='productdisplay-right-prices'>
                 <div className='productdisplay-right-price-old'>
