@@ -49,6 +49,7 @@ let all_product = [
     movie_stars: "John David Washington, Robert Pattinson, Elizabeth Debicki",
     movie_director: "Christopher Nolan",
     movie_runtime: "2h 30min",
+    movie_rating: "7.5",
   },
   {
     id: 2,
@@ -63,6 +64,7 @@ let all_product = [
     movie_stars: "Gal Gadot, Chris Pine, Kristen Wiig",
     movie_director: "Patty Jenkins",
     movie_runtime: "2h 31min",
+    movie_rating: "5.4",
   },
   {
     id: 3,
@@ -77,6 +79,7 @@ let all_product = [
     movie_stars: "Jamie Foxx, Tina Fey, Graham Norton",
     movie_director: "Pete Docter, Kemp Powers",
     movie_runtime: "1h 40min",
+    movie_rating: "8.1",
   },
   {
     id: 4,
@@ -91,6 +94,7 @@ let all_product = [
     movie_stars: "Frances McDormand, David Strathairn, Linda May",
     movie_director: "Chloé Zhao",
     movie_runtime: "1h 47min",
+    movie_rating: "7.4",
   },
   {
     id: 5,
@@ -105,6 +109,7 @@ let all_product = [
     movie_stars: "Margot Robbie, Rosie Perez, Mary Elizabeth Winstead",
     movie_director: "Cathy Yan",
     movie_runtime: "1h 49min",
+    movie_rating: "6.1",
   },
   {
     id: 6,
@@ -119,6 +124,7 @@ let all_product = [
     movie_stars: "Elisabeth Moss, Oliver Jackson-Cohen, Harriet Dyer",
     movie_director: "Leigh Whannell",
     movie_runtime: "2h 4min",
+    movie_rating: "7.1",
   },
   {
     id: 7,
@@ -133,6 +139,7 @@ let all_product = [
     movie_stars: "Millie Bobby Brown, Henry Cavill, Sam Claflin",
     movie_director: "Harry Bradbeer",
     movie_runtime: "2h 3min",
+    movie_rating: "6.6",
   },
   {
     id: 8,
@@ -147,6 +154,7 @@ let all_product = [
     movie_stars: "Eddie Redmayne, Alex Sharp, Sacha Baron Cohen",
     movie_director: "Aaron Sorkin",
     movie_runtime: "2h 9min",
+    movie_rating: "7.8",
   },
   {
     id: 9,
@@ -161,6 +169,7 @@ let all_product = [
     movie_stars: "Delroy Lindo, Jonathan Majors, Clarke Peters",
     movie_director: "Spike Lee",
     movie_runtime: "2h 34min",
+    movie_rating: "6.5",
   },
   {
     id: 10,
@@ -175,6 +184,7 @@ let all_product = [
     movie_stars: "Tom Hanks, Helena Zengel, Tom Astor",
     movie_director: "Paul Greengrass",
     movie_runtime: "1h 58min",
+    movie_rating: "6.8",
   },
   {
     id: 11,
@@ -189,6 +199,7 @@ let all_product = [
     movie_stars: "Gary Oldman, Amanda Seyfried, Lily Collins",
     movie_director: "David Fincher",
     movie_runtime: "2h 11min",
+    movie_rating: "7.0",
   },
   {
     id: 12,
@@ -203,6 +214,7 @@ let all_product = [
     movie_stars: "Riz Ahmed, Olivia Cooke, Paul Raci",
     movie_director: "Darius Marder",
     movie_runtime: "2h 10min",
+    movie_rating: "7.8",
   },
   {
     id: 13,
@@ -217,6 +229,7 @@ let all_product = [
     movie_stars: "Daniel Kaluuya, LaKeith Stanfield, Jesse Plemons",
     movie_director: "Shaka King",
     movie_runtime: "2h 6min",
+    movie_rating: "7.5",
   },
   {
     id: 14,
@@ -231,6 +244,7 @@ let all_product = [
     movie_stars: "Alexander Skarsgård, Millie Bobby Brown, Rebecca Hall",
     movie_director: "Adam Wingard",
     movie_runtime: "1h 53min",
+    movie_rating: "6.4",
   },
   {
     id: 15,
@@ -245,6 +259,7 @@ let all_product = [
     movie_stars: "Timothée Chalamet, Rebecca Ferguson, Zendaya",
     movie_director: "Denis Villeneuve",
     movie_runtime: "2h 35min",
+    movie_rating: "8.3",
   },
   {
     id: 16,
@@ -259,6 +274,7 @@ let all_product = [
     movie_stars: "Emma Stone, Emma Thompson, Joel Fry",
     movie_director: "Craig Gillespie",
     movie_runtime: "2h 14min",
+    movie_rating: "7.4",
   },
   {
     id: 17,
@@ -273,6 +289,7 @@ let all_product = [
     movie_stars: "Emily Blunt, Millicent Simmonds, Cillian Murphy",
     movie_director: "John Krasinski",
     movie_runtime: "1h 37min",
+    movie_rating: "7.4",
   },
   {
     id: 18,
@@ -287,6 +304,7 @@ let all_product = [
     movie_stars: "Margot Robbie, Idris Elba, John Cena",
     movie_director: "James Gunn",
     movie_runtime: "2h 12mim",
+    movie_rating: "7.2"
   },
   {
     id: 19,
@@ -301,6 +319,7 @@ let all_product = [
     movie_stars: "Dave Callaham, Destin Daniel Cretton,, Andrew Lanham",
     movie_director: "Destin Daniel Cretton",
     movie_runtime: "2h 12min",
+    movie_rating: "7.6",
   },
   {
     id: 20,
@@ -315,6 +334,7 @@ let all_product = [
     movie_stars: "Eric Pearson, Jac Schaeffer, Ned Benson",
     movie_director: "Cate Shortland",
     movie_runtime: "2h 14min",
+    movie_rating: "6.7",
   },
   {
     id: 21,
@@ -329,6 +349,7 @@ let all_product = [
     movie_stars: "Daniel Craig, Ana de Armas, Rami Malek",
     movie_director: "Cary Joji Fukunaga",
     movie_runtime: "2h 43min",
+    movie_rating: "7.5",
   },
   {
     id: 22,
@@ -343,6 +364,7 @@ let all_product = [
     movie_stars: "Tom Holland, Zendaya, Benedict Cumberbatch",
     movie_director: "Jon Watts",
     movie_runtime: "2h 28min",
+    movie_rating: "8.5",
   },
   {
     id: 23,
@@ -357,6 +379,7 @@ let all_product = [
     movie_stars: "Keanu Reeves, Carrie-Anne Moss, Yahya Abdul-Mateen II",
     movie_director: "Lana Wachowski",
     movie_runtime: "2h 28min",
+    movie_rating: "5.7",
   },
   {
     id: 24,
@@ -371,6 +394,7 @@ let all_product = [
     movie_stars: "Stephanie Beatriz, María Cecilia Botero, John Leguizamo",
     movie_director: "Jared Bush, Byron Howard",
     movie_runtime: "1h 42min",
+    movie_rating: "7.7",
   },
   {
     id: 25,
@@ -385,6 +409,7 @@ let all_product = [
     movie_stars: "Kelly Marie Tran, Awkwafina, Gemma Chan",
     movie_director: "Don Hall, Carlos López Estrada",
     movie_runtime: "1h 47min",
+    movie_rating: "7.4",
   },
   {
     id: 26,
@@ -399,6 +424,7 @@ let all_product = [
     movie_stars: "Dave Bautista, Ella Purnell, Ana de la Reguera",
     movie_director: "Zack Snyder",
     movie_runtime: "2h 28min",
+    movie_rating: "5.8",
   },
   {
     id: 27,
@@ -413,6 +439,7 @@ let all_product = [
     movie_stars: "Jacob Tremblay, Jack Dylan Grazer, Emma Berman",
     movie_director: "Enrico Casarosa",
     movie_runtime: "1h 35min",
+    movie_rating: "7.5",
   },
   {
     id: 28,
@@ -427,6 +454,7 @@ let all_product = [
     movie_stars: "LeBron James, Don Cheadle, Cedric Joe",
     movie_director: "Malcolm D. Lee",
     movie_runtime: "1h 55min",
+    movie_rating: "4.4",
   },
   {
     id: 29,
@@ -441,6 +469,7 @@ let all_product = [
     movie_stars: "Dev Patel, Alicia Vikander, Joel Edgerton",
     movie_director: "David Lowery",
     movie_runtime: "2h 10min",
+    movie_rating: "6.7",
   },
   {
     id: 30,
@@ -455,6 +484,7 @@ let all_product = [
     movie_stars: "Chloé Zhao, Kaz Firpo, Ryan Firpo",
     movie_director: "Chloé Zhao",
     movie_runtime: "2h 37min",
+    movie_rating: "6.7",
   },
   {
     id: 31,
@@ -469,6 +499,7 @@ let all_product = [
     movie_stars: "Jamie Lee Curtis, Judy Greer, Andi Matichak",
     movie_director: "David Gordon Green",
     movie_runtime: "1h 45min",
+    movie_rating: "6.1",
   },
   {
     id: 32,
@@ -483,6 +514,7 @@ let all_product = [
     movie_stars: "Ryan Reynolds, Jodie Comer, Taika Waititi",
     movie_director: "Shawn Levy",
     movie_runtime: "1h 55min",
+    movie_rating: "7.5",
   },
   {
     id: 33,
@@ -497,6 +529,7 @@ let all_product = [
     movie_stars: "Matt Damon, Adam Driver, Jodie Comer",
     movie_director: "Ridley Scott",
     movie_runtime: "2h 32min",
+    movie_rating: "7.4",
   },
   {
     id: 34,
@@ -511,6 +544,7 @@ let all_product = [
     movie_stars: "Jamie Lee Curtis, Judy Greer, Andi Matichak",
     movie_director: "David Gordon Green",
     movie_runtime: "1h 45min",
+    movie_rating: "6.1",
   },
   {
     id: 35,
@@ -525,6 +559,7 @@ let all_product = [
     movie_stars: "Jared Leto, Matt Smith, Adria Arjona",
     movie_director: "Daniel Espinosa",
     movie_runtime: "1h 48min",
+    movie_rating: "5.4",
   },
   {
     id: 36,
@@ -539,6 +574,7 @@ let all_product = [
     movie_stars: "Chris Hemsworth, Natalie Portman, Christian Bale",
     movie_director: "Taika Waititi",
     movie_runtime: "2h 11min",
+    movie_rating: "7.6",
   },
 ];
 

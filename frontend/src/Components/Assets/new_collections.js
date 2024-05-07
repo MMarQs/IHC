@@ -20,6 +20,7 @@ let new_collections = [
     movie_stars: "Riz Ahmed, Olivia Cooke, Paul Raci",
     movie_director: "Darius Marder",
     movie_runtime: "2h 10min",
+    movie_rating: "7.8",
   },
   {
     id: 35,
@@ -33,6 +34,7 @@ let new_collections = [
     movie_stars: "Jared Leto, Matt Smith, Adria Arjona",
     movie_director: "Daniel Espinosa",
     movie_runtime: "1h 48min",
+    movie_rating: "5.4",
   },
   {
     id: 14,
@@ -46,6 +48,7 @@ let new_collections = [
     movie_stars: "Alexander Skarsgård, Millie Bobby Brown, Rebecca Hall",
     movie_director: "Adam Wingard",
     movie_runtime: "1h 53min",
+    movie_rating: "6.4",
   },
   {
     id: 8,
@@ -59,6 +62,7 @@ let new_collections = [
     movie_stars: "Eddie Redmayne, Alex Sharp, Sacha Baron Cohen",
     movie_director: "Aaron Sorkin",
     movie_runtime: "2h 9min",
+    movie_rating: "7.8",
   },
   {
     id: 15,
@@ -72,6 +76,7 @@ let new_collections = [
     movie_stars: "Timothée Chalamet, Rebecca Ferguson, Zendaya",
     movie_director: "Denis Villeneuve",
     movie_runtime: "2h 35min",
+    movie_rating: "8.3",
   },
   {
     id: 2,
@@ -85,6 +90,7 @@ let new_collections = [
     movie_stars: "Gal Gadot, Chris Pine, Kristen Wiig",
     movie_director: "Patty Jenkins",
     movie_runtime: "2h 31min",
+    movie_rating: "5.4",
   },
   {
     id: 17,
@@ -98,6 +104,7 @@ let new_collections = [
     movie_stars: "Emily Blunt, Millicent Simmonds, Cillian Murphy",
     movie_director: "John Krasinski",
     movie_runtime: "1h 37min",
+    movie_rating: "7.4",
   },
   {
     id: 28,
@@ -111,6 +118,7 @@ let new_collections = [
     movie_stars: "LeBron James, Don Cheadle, Cedric Joe",
     movie_director: "Malcolm D. Lee",
     movie_runtime: "1h 55min",
+    movie_rating: "4.4",
   },
 ];
 

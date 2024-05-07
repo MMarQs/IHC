@@ -63,7 +63,7 @@ export const CartItems = () => {
             <div className='cartitems-promocode'>
                 <p>If you have a promo code, enter it here</p>
                 <div className='cartitems-promobox'>
-                    <input type='text' placeholder='promo code' value={promoCode} onChange={handleInputChange}/>
+                    <input type='text' placeholder='Promo code' value={promoCode} onChange={handleInputChange}/>
                     <button onClick={() => addPromoCode(promoCode)}>Submit</button>
                 </div>
             </div>

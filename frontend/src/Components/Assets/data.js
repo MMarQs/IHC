@@ -17,6 +17,7 @@ let data_product = [
     movie_stars: "John David Washington, Robert Pattinson, Elizabeth Debicki",
     movie_director: "Christopher Nolan",
     movie_runtime: "2h 30min",
+    movie_rating: "7.5",
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ let data_product = [
     movie_stars: "Gal Gadot, Chris Pine, Kristen Wiig",
     movie_director: "Patty Jenkins",
     movie_runtime: "2h 31min",
+    movie_rating: "5.4",
   },
   {
     id: 3,
@@ -45,6 +47,7 @@ let data_product = [
     movie_stars: "Jamie Foxx, Tina Fey, Graham Norton",
     movie_director: "Pete Docter, Kemp Powers",
     movie_runtime: "1h 40min",
+    movie_rating: "8.1",
   },
   {
     id: 4,
@@ -59,6 +62,7 @@ let data_product = [
     movie_stars: "Frances McDormand, David Strathairn, Linda May",
     movie_director: "Chloé Zhao",
     movie_runtime: "1h 47min",
+    movie_rating: "7.4",
   },
 ];
 
