@@ -11,8 +11,8 @@ let data_product = [
     category: "streaming",
     genre: "Action, Sci-Fi, Thriller",
     image: p1_img,
-    new_price: 4.99,
-    old_price: 9.99,
+    streaming_price: 4.99,
+    streaming_old_price: 9.99,
   },
   {
     id: 2,
@@ -21,8 +21,8 @@ let data_product = [
     category: "streaming",
     genre: "Action, Adventure, Fantasy",
     image: p2_img,
-    new_price: 4.99,
-    old_price: 9.99,
+    streaming_price: 3.99,
+    streaming_old_price: 8.99,
   },
   {
     id: 3,
@@ -31,8 +31,8 @@ let data_product = [
     category: "streaming",
     genre: "Animation, Adventure, Comedy",
     image: p3_img,
-    new_price: 3.49,
-    old_price: 9.99,
+    streaming_price: 3.49,
+    streaming_old_price: 8.49,
   },
   {
     id: 4,
@@ -41,8 +41,8 @@ let data_product = [
     category: "streaming",
     genre: "Drama",
     image: p4_img,
-    new_price: 4.99,
-    old_price: 9.99,
+    streaming_price: 4.99,    
+    streaming_old_price: 9.99,
   },
 ];
 

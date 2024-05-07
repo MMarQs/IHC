@@ -14,8 +14,8 @@ let new_collections = [
     year: "2020",
     genre: "Drama, Music",
     image: p1_img,
-    new_price: 5.99,
-    old_price: 9.99,
+    streaming_price: 2.99,
+    streaming_old_price: 7.99,
   },
   {
     id: 35,
@@ -23,8 +23,8 @@ let new_collections = [
     year: "2022",
     genre: "Action, Adventure, Drama",
     image: p2_img,
-    new_price: 11.99,
-    old_price: 19.99,
+    streaming_price: 1.99,
+    streaming_old_price: 6.99,
   },
   {
     id: 14,
@@ -32,8 +32,8 @@ let new_collections = [
     year: "2021",
     genre: "Action, Sci-Fi, Thriller",
     image: p3_img,
-    new_price: 5.49,
-    old_price: 9.99,
+    streaming_price: 5.49,
+    streaming_old_price: 10.49,
   },
   {
     id: 8,
@@ -41,8 +41,8 @@ let new_collections = [
     year: "2020",
     genre: "Drama, History, Thriller",
     image: p4_img,
-    new_price: 4.49,
-    old_price: 9.99,
+    streaming_price: 4.49,
+    streaming_old_price: 9.49,
   },
   {
     id: 15,
@@ -50,8 +50,8 @@ let new_collections = [
     year: "2021",
     genre: "Adventure, Drama, Sci-Fi",
     image: p5_img,
-    new_price: 6.99,
-    old_price: 9.99,
+    streaming_price: 6.99,
+    streaming_old_price: 11.99,
   },
   {
     id: 2,
@@ -59,8 +59,8 @@ let new_collections = [
     year: "2020",
     genre: "Action, Adventure, Fantasy",
     image: p6_img,
-    new_price: 4.99,
-    old_price: 9.99,
+    streaming_price: 3.99,
+    streaming_old_price: 8.99,
   },
   {
     id: 17,
@@ -68,8 +68,8 @@ let new_collections = [
     year: "2020",
     genre: "Drama, Horror, Sci-Fi",
     image: p7_img,
-    new_price: 3.99,
-    old_price: 9.99,
+    streaming_price: 3.99,
+    streaming_old_price: 8.99,
   },
   {
     id: 28,
@@ -77,8 +77,8 @@ let new_collections = [
     year: "2021",
     genre: "Animation, Adventure, Comedy",
     image: p8_img,
-    new_price: 12.99,
-    old_price: 19.99,
+    streaming_price: 2.99,
+    streaming_old_price: 7.99,
   },
 ];
 
