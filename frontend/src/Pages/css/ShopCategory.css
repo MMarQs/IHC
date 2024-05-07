@@ -1,14 +1,9 @@
-.shopcategory-banner {
-    display: block;
-    width: 82%;
-    margin: 30px auto;
-}
-
 .shopcategory-indexSort {
     display: flex;
     margin: 0px 170px;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .shopcategory-sort {
@@ -29,16 +24,36 @@
     gap: 20px;
 }
 
-.shopcategory-loadmore {
+.shopcategory-pagination {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px auto;
-    width: 233px;
-    height: 69px;
-    border-radius: 75px;
-    background: #ededed;
-    color: #787878;
-    font-size: 18px;
-    font-weight: 500;
-}
+    padding: 50px;
+  }
+
+  .shopcategory-pagination button {
+    font-size: 15px;
+    margin: 0 10px;
+    color: #656565;
+    border-radius: 30px; 
+    padding: 15px 25px;
+    background: #dedede;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease; 
+  }
+  
+  .shopcategory-pagination button:hover {
+    background: #656565; 
+    color: #dedede;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /* Adiciona uma sombra ao botão */
+  }
+
+  .shopcategory-pagination button.active {
+    border: #656565 1px solid;
+    color: #656565;
+  }
+
+  .shopcategory-pagination button.active:hover {
+    color: #dedede;
+  }
