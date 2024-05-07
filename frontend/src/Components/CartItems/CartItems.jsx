@@ -2,9 +2,15 @@ import React, {useContext} from 'react'
 import './CartItems.css'
 import { ShopContext } from '../../Context/ShopContext'
 import remove_icon from '../Assets/cart_cross_icon.png'
+import { useState } from 'react'
 
 export const CartItems = () => {
-    const {getTotalCartAmount, all_product, cartItems, removeFromCart} = useContext(ShopContext)
+    const {getTotalCartAmount, all_product, cartItems, removeFromCart, addPromoCode, checkout} = useContext(ShopContext)
+    const [promoCode, setPromoCode] = useState('');
+
+    const handleInputChange = (event) => {
+        setPromoCode(event.target.value);
+    };
   return (
     <div className='cartitems'>
         <div className='caritems-format-main'> 
@@ -57,8 +63,8 @@ export const CartItems = () => {
             <div className='cartitems-promocode'>
                 <p>If you have a promo code, enter it here</p>
                 <div className='cartitems-promobox'>
-                    <input type='text' placeholder='promo code'/>
-                    <button>Submit</button>
+                    <input type='text' placeholder='promo code' value={promoCode} onChange={handleInputChange}/>
+                    <button onClick={() => addPromoCode(promoCode)}>Submit</button>
                 </div>
             </div>
           </div>

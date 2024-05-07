@@ -11,6 +11,8 @@ let new_collections = [
   {
     id: 12,
     name: "Sound Of Metal",
+    year: "2020",
+    genre: "Drama, Music",
     image: p1_img,
     new_price: 5.99,
     old_price: 9.99,
@@ -18,6 +20,8 @@ let new_collections = [
   {
     id: 35,
     name: "Morbius",
+    year: "2022",
+    genre: "Action, Adventure, Drama",
     image: p2_img,
     new_price: 11.99,
     old_price: 19.99,
@@ -25,6 +29,8 @@ let new_collections = [
   {
     id: 14,
     name: "Godzilla vs. Kong",
+    year: "2021",
+    genre: "Action, Sci-Fi, Thriller",
     image: p3_img,
     new_price: 5.49,
     old_price: 9.99,

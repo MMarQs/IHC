@@ -39,7 +39,9 @@ let all_product = [
   {
     id: 1,
     name: "Tenet",
+    year: "2020",
     category: "streaming",
+    genre: "Action, Sci-Fi, Thriller",
     image: p1_img,
     new_price: 4.99,
     old_price: 9.99,
@@ -47,7 +49,9 @@ let all_product = [
   {
     id: 2,
     name: "Wonder Woman 1984",
+    year: "2020",
     category: "streaming",
+    genre: "Action, Adventure, Fantasy",
     image: p2_img,
     new_price: 4.99,
     old_price: 9.99,
@@ -55,7 +59,9 @@ let all_product = [
   {
     id: 3,
     name: "Soul",
+    year: "2020",
     category: "streaming",
+    genre: "Animation, Adventure, Comedy",  
     image: p3_img,
     new_price: 3.49,
     old_price: 9.99,
@@ -63,7 +69,9 @@ let all_product = [
   {
     id: 4,
     name: "Nomadland",
+    year: "2020",
     category: "streaming",
+    genre: "Drama",
     image: p4_img,
     new_price: 4.99,
     old_price: 9.99,
@@ -71,7 +79,9 @@ let all_product = [
   {
     id: 5,
     name: "Birds of Prey",
+    year: "2020",
     category: "streaming",
+    genre: "Action, Adventure, Crime",
     image: p5_img,
     new_price: 5.49,
     old_price: 9.99,
@@ -79,7 +89,9 @@ let all_product = [
   {
     id: 6,
     name: "The Invisible Man",
+    year: "2020",
     category: "streaming",
+    genre: "Horror, Mystery, Sci-Fi",
     image: p6_img,
     new_price: 5.49,
     old_price: 9.99,
@@ -87,7 +99,9 @@ let all_product = [
   {
     id: 7,
     name: "Enola Holmes",
+    year: "2020",
     category: "streaming",
+    genre: "Adventure, Crime, Drama",
     image: p7_img,
     new_price: 3.49,
     old_price: 9.99,
@@ -95,7 +109,9 @@ let all_product = [
   {
     id: 8,
     name: "The Trial Of The Chicago 7",
+    year: "2020",
     category: "streaming",
+    genre: "Drama, History, Thriller",
     image: p8_img,
     new_price: 4.49,
     old_price: 9.99,
@@ -103,7 +119,9 @@ let all_product = [
   {
     id: 9,
     name: "Da 5 Bloods",
+    year: "2020",
     category: "streaming",
+    genre: "Drama, War",
     image: p9_img,
     new_price: 2.99,
     old_price: 9.99,
@@ -111,7 +129,9 @@ let all_product = [
   {
     id: 10,
     name: "News Of The World",
+    year: "2020",
     category: "streaming",
+    genre: "Action, Adventure, Drama",
     image: p10_img,
     new_price: 3.49,
     old_price: 9.99,
@@ -119,7 +139,9 @@ let all_product = [
   {
     id: 11,
     name: "Mank",
+    year: "2020",
     category: "streaming",
+    genre: "Biography, Comedy, Drama",
     image: p11_img,
     new_price: 5.49,
     old_price: 9.99,
@@ -127,7 +149,9 @@ let all_product = [
   {
     id: 12,
     name: "Sound Of Metal",
+    year: "2020",
     category: "streaming",
+    genre: "Drama, Music",
     image: p12_img,
     new_price: 5.99,
     old_price: 9.99,
@@ -135,7 +159,9 @@ let all_product = [
   {
     id: 13,
     name: "Judas And The Black Messiah",
+    year: "2021",
     category: "streaming",
+    genre: "Biography, Drama, History",
     image: p13_img,
     new_price: 3.99,
     old_price: 9.99,
@@ -143,7 +169,9 @@ let all_product = [
   {
     id: 14,
     name: "Godzilla vs. Kong",
+    year: "2021",
     category: "streaming",
+    genre: "Action, Sci-Fi, Thriller",
     image: p14_img,
     new_price: 5.49,
     old_price: 9.99,
@@ -151,7 +179,9 @@ let all_product = [
   {
     id: 15,
     name: "Dune",
+    year: "2021",
     category: "streaming",
+    genre: "Adventure, Drama, Sci-Fi",
     image: p15_img,
     new_price: 6.99,
     old_price: 9.99,
@@ -159,7 +189,9 @@ let all_product = [
   {
     id: 16,
     name: "Cruella",
+    year: "2021",
     category: "streaming",
+    genre: "Comedy, Crime",
     image: p16_img,
     new_price: 4.49,
     old_price: 9.99,
@@ -167,7 +199,9 @@ let all_product = [
   {
     id: 17,
     name: "A Quiet Place - Part II",
+    year: "2021",
     category: "streaming",
+    genre: "Drama, Horror, Sci-Fi",
     image: p17_img,
     new_price: 3.99,
     old_price: 9.99,
@@ -175,7 +209,9 @@ let all_product = [
   {
     id: 18,
     name: "Suicide Squad",
+    year: "2021",
     category: "streaming",
+    genre: "Action, Adventure, Fantasy",
     image: p18_img,
     new_price: 5.49,
     old_price: 9.99,
@@ -183,7 +219,9 @@ let all_product = [
   {
     id: 19,
     name: "Shang-Chi And The Legend Of The Ten Rings",
+    year: "2021",
     category: "physical-copy",
+    genre: "Action, Adventure, Fantasy",
     image: p19_img,
     new_price: 12.99,
     old_price: 19.99,
@@ -191,7 +229,9 @@ let all_product = [
   {
     id: 20,
     name: "Black Widow",
+    year: "2021",
     category: "physical-copy",
+    genre: "Action, Adventure, Sci-Fi",
     image: p20_img,
     new_price: 13.49,
     old_price: 19.99,
@@ -199,7 +239,9 @@ let all_product = [
   {
     id: 21,
     name: "No Time To Die",
+    year: "2021",
     category: "physical-copy",
+    genre: "Action, Adventure, Thriller",
     image: p21_img,
     new_price: 17.99,
     old_price: 19.99,
@@ -207,7 +249,9 @@ let all_product = [
   {
     id: 22,
     name: "Spider-Man: No Way Home",
+    year: "2021",
     category: "physical-copy",
+    genre: "Action, Adventure, Fantasy",
     image: p22_img,
     new_price: 16.49,
     old_price: 19.99,
@@ -215,7 +259,9 @@ let all_product = [
   {
     id: 23,
     name: "The Matrix Resurrections",
+    year: "2021",
     category: "physical-copy",
+    genre: "Action, Sci-Fi",
     image: p23_img,
     new_price: 15.99,
     old_price: 19.99,
@@ -223,7 +269,9 @@ let all_product = [
   {
     id: 24,
     name: "Encanto",
+    year: "2021",
     category: "physical-copy",
+    genre: "Animation, Adventure, Comedy",
     image: p24_img,
     new_price: 11.99,
     old_price: 19.99,
@@ -231,7 +279,9 @@ let all_product = [
   {
     id: 25,
     name: "Raya And The Last Dragon",
+    year: "2021",
     category: "physical-copy",
+    genre: "Animation, Action, Adventure",
     image: p25_img,
     new_price: 11.49,
     old_price: 19.99,
@@ -239,7 +289,9 @@ let all_product = [
   {
     id: 26,
     name: "Army Of The Dead",
+    year: "2021",
     category: "physical-copy",
+    genre: "Action, Crime, Horror",
     image: p26_img,
     new_price: 12.99,
     old_price: 19.99,
@@ -247,7 +299,9 @@ let all_product = [
   {
     id: 27,
     name: "Luca",
+    year: "2021",
     category: "physical-copy",
+    genre: "Animation, Adventure, Comedy",
     image: p27_img,
     new_price: 14.49,
     old_price: 19.99,
@@ -255,7 +309,9 @@ let all_product = [
   {
     id: 28,
     name: "Space Jam: A New Legacy",
+    year: "2021",
     category: "physical-copy",
+    genre: "Animation, Adventure, Comedy",
     image: p28_img,
     new_price: 12.99,
     old_price: 19.99,
@@ -263,7 +319,9 @@ let all_product = [
   {
     id: 29,
     name: "The Green Knight",
+    year: "2021",
     category: "physical-copy",
+    genre: "Adventure, Drama, Fantasy",
     image: p29_img,
     new_price: 13.99,
     old_price: 19.99,
@@ -271,7 +329,9 @@ let all_product = [
   {
     id: 30,
     name: "Eternals",
+    year: "2021",
     category: "physical-copy",
+    genre: "Action, Adventure, Drama",
     image: p30_img,
     new_price: 12.49,
     old_price: 19.99,
@@ -279,7 +339,9 @@ let all_product = [
   {
     id: 31,
     name: "Halloween Kills",
+    year: "2021",
     category: "physical-copy",
+    genre: "Horror, Thriller",
     image: p31_img,
     new_price: 12.49,
     old_price: 19.99,
@@ -287,7 +349,9 @@ let all_product = [
   {
     id: 32,
     name: "Free Guy",
+    year: "2021",
     category: "physical-copy",
+    genre: "Action, Adventure, Comedy",
     image: p32_img,
     new_price: 11.99,
     old_price: 19.99,
@@ -295,7 +359,9 @@ let all_product = [
   {
     id: 33,
     name: "The Last Duel",
+    year: "2021",
     category: "physical-copy",
+    genre: "Action, Drama, History",
     image: p33_img,
     new_price: 13.49,
     old_price: 19.99,
@@ -303,7 +369,9 @@ let all_product = [
   {
     id: 34,
     name: "Halloween Ends",
+    year: "2022",
     category: "physical-copy",
+    genre: "Horror, Thriller",
     image: p34_img,
     new_price: 12.49,
     old_price: 19.99,
@@ -311,7 +379,9 @@ let all_product = [
   {
     id: 35,
     name: "Morbius",
+    year: "2022",
     category: "physical-copy",
+    genre: "Action, Adventure, Fantasy",
     image: p35_img,
     new_price: 11.99,
     old_price: 19.99,
@@ -319,7 +389,9 @@ let all_product = [
   {
     id: 36,
     name: "Thor: Love and Thunder",
+    year: "2022",
     category: "physical-copy",
+    genre: "Action, Adventure, Fantasy",
     image: p36_img,
     new_price: 16.99,
     old_price: 19.99,

@@ -1,6 +1,7 @@
 import React, { createContext } from "react";
 import all_product from "../Components/Assets/all_product";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const ShopContext = createContext(null);
 const getDefaultCart = () => {
@@ -44,6 +45,22 @@ const ShopContextProvider = (props) => {
             }
         }
         return totalItems;
+    }
+
+    const addPromoCode = (promoCode) => {
+        if (promoCode === "blockbuster10" || promoCode === "IHC") {
+            alert("Promo code applied successfully!");
+            return getTotalCartAmount() * 0.9;
+        } else {
+            alert("Invalid promo code!");
+        }
+        return getTotalCartAmount();
+    }
+
+    const checkout = () => {
+        alert("Checkout successful!");
+        setCartItems(getDefaultCart());
+        <Link to="/"></Link>
     }
 
     const contextValue = {getTotalCartAmount, getTotalCartItems, all_product, cartItems, addToCart, removeFromCart};
