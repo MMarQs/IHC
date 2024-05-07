@@ -1,7 +1,8 @@
 import React from 'react'
 import './DescriptionBox.css'
 
-export const DescriptionBox = () => {
+export const DescriptionBox = (props) => {
+  const {product} = props;
   return (
     <div className='descriptionbox'>
         <div className='descriptionbox-navigator'>
@@ -10,11 +11,9 @@ export const DescriptionBox = () => {
         </div>
         <div className='descriptionbox-description'>
             <p>
-                Anything, just something as a test.
+                {product.movie_description}
             </p>
-            <p>
-                Anything, just something as a test.
-            </p>
+            
         </div>
     </div>
   )

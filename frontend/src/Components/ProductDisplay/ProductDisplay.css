@@ -95,10 +95,19 @@
     cursor: pointer;
 }
 
-.productdisplay-right-category {
+.productdisplay-right-category,
+.productdisplay-right-movie-stars,
+.productdisplay-right-movie-director,
+.productdisplay-right-movie-writer,
+.productdisplay-right-movie-runtime
+{
     margin-top: 10px;
 }
 
-.productdisplay-right-category span {
+.productdisplay-right-category span,
+.productdisplay-right-movie-stars span,
+.productdisplay-right-movie-director span,
+.productdisplay-right-movie-writer span,
+.productdisplay-right-movie-runtime span{
     font-weight: 600;
 }

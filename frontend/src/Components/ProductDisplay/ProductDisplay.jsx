@@ -39,7 +39,11 @@ export const ProductDisplay = (props) => {
                 </div>
             </div>
             <div className='productdisplay-right-description'>
-                Anything, just something as a test.
+                {product.movie_description}
+                <p className='productdisplay-right-category'><span>Category: </span>{product.genre}</p>
+                <p className='productdisplay-right-movie-stars'><span>Movie Stars: </span>{product.movie_stars}</p>
+                <p className='productdisplay-right-movie-director'><span>Director: </span>{product.movie_director}</p>
+                <p className='productdisplay-right-movie-runtime'><span>Runtime: </span>{product.movie_runtime}</p>
             </div>
             <div className='productdisplay-right-size'>
                 <h1>Select Type</h1>
@@ -49,8 +53,6 @@ export const ProductDisplay = (props) => {
                 </div>
             </div>
             <button onClick={() => {addToCart(product.id)}}>ADD TO CART</button>
-            <p className='productdisplay-right-category'><span>Category: </span>Women , T-shirt, Crop Top</p>
-            <p className='productdisplay-right-category'><span>Tags: </span>Modern , Latest</p>
         </div>
     </div>
   )
