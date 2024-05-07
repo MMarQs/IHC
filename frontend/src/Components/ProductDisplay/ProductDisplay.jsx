@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react';
 import './ProductDisplay.css'
 import star_icon from '../Assets/star_icon.png'
 import half_star_icon from '../Assets/half_star_icon.png'
@@ -8,6 +8,9 @@ import { ShopContext } from '../../Context/ShopContext'
 export const ProductDisplay = (props) => {
     const {product} = props;
     const {addToCart} = useContext(ShopContext);
+    const [selectedOption, setSelectedOption] = useState('streaming');
+    const price = selectedOption === 'streaming' ? product.streaming_price : product.physical_price;
+    const old_price = selectedOption === 'streaming' ? product.streaming_old_price : product.physical_old_price;
 
     const renderStars = (rating) => {
         let stars = [];
@@ -51,10 +54,10 @@ export const ProductDisplay = (props) => {
             </div>
             <div className='productdisplay-right-prices'>
                 <div className='productdisplay-right-price-old'>
-                    €{product.old_price}
+                    €{old_price}
                 </div>
                 <div className='productdisplay-right-price-new'>
-                    €{product.new_price}
+                    €{price}
                 </div>
             </div>
             <div className='productdisplay-right-description'>
@@ -67,8 +70,12 @@ export const ProductDisplay = (props) => {
             <div className='productdisplay-right-size'>
                 <h1>Select Type</h1>
                 <div className='productdisplay-right-sizes'>
-                    <div>Streaming</div>
-                    <div>Physical Copy</div>
+                <div style={{ background: selectedOption === 'streaming' ? '#656565' : '#fbfbfb' }} onClick={() => setSelectedOption('streaming')}>
+                    Streaming
+                </div>
+                <div style={{ background: selectedOption === 'physical' ? '#656565' : '#fbfbfb' }} onClick={() => setSelectedOption('physical')}>
+                    Physical Copy
+                </div>
                 </div>
             </div>
             <button onClick={() => {addToCart(product.id)}}>ADD TO CART</button>
