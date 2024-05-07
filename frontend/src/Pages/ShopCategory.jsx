@@ -9,6 +9,8 @@ export const ShopCategory = (props) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 16;
   const totalPages = Math.ceil(all_product.length / itemsPerPage);
+  const start = ((currentPage - 1) * itemsPerPage) + 1;
+  const end = Math.min(currentPage * itemsPerPage, all_product.length);
   
   const loadPage = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -18,7 +20,7 @@ export const ShopCategory = (props) => {
     <div className='shop-category'>
       <div className='shopcategory-indexSort'>
         <p>
-          <span>Showing 1-16</span> out of 36 products
+          <span>Showing {start}-{end}</span> out of {all_product.length} products
         </p>
         <div className='shopcategory-sort'>
           Sort by <img src={dropdown_icon} alt="" />
