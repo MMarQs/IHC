@@ -68,8 +68,14 @@
     cursor: pointer;
 }
 
+.nav-login-cart button:hover {
+    background-color: #656565;
+    color: #dedede;
+}
+
 .nav-login-cart button:active {
     background: #f3f3f3;
+    color: #656565;
 }
 
 .nav-cart-count {

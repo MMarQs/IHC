@@ -9,7 +9,6 @@
 .shopcategory-sort {
     padding: 10px 20px;
     border-radius: 40px;
-    border: 1px solid #888;
 }
 
 .shopcategory-sort p span {
@@ -29,31 +28,44 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-  }
+}
 
-  .shopcategory-pagination button {
-    font-size: 15px;
-    margin: 0 10px;
-    color: #656565;
-    border-radius: 30px; 
-    padding: 15px 25px;
-    background: #dedede;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease; 
-  }
-  
-  .shopcategory-pagination button:hover {
-    background: #656565; 
-    color: #dedede;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /* Adiciona uma sombra ao botão */
-  }
+.shopcategory-pagination button {
+  font-size: 15px;
+  margin: 0 10px;
+  color: #656565;
+  border-radius: 30px; 
+  padding: 15px 25px;
+  background: #dedede;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease; 
+}
 
-  .shopcategory-pagination button.active {
-    border: #656565 1px solid;
-    color: #656565;
-  }
+.shopcategory-pagination button:hover {
+  background: #656565; 
+  color: #dedede;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); 
+}
 
-  .shopcategory-pagination button.active:hover {
-    color: #dedede;
-  }
+.shopcategory-pagination button.active {
+  border: #656565 1px solid;
+  color: #656565;
+}
+
+.shopcategory-pagination button.active:hover {
+  color: #dedede;
+}
+
+.shopcategory-sort select {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.shopcategory-sort select:hover {
+  background-color: #656565;
+  color: #dedede;
+}

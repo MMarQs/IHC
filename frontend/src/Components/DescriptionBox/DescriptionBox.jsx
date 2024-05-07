@@ -7,7 +7,7 @@ export const DescriptionBox = (props) => {
     <div className='descriptionbox'>
         <div className='descriptionbox-navigator'>
             <div className='descriptionbox-nav-box'>Description</div>
-            <div className='descriptionbox-nav-box fade'>Reviews (122)</div>
+            <div className='descriptionbox-nav-box fade'>Reviews ({product.review_count})</div>
         </div>
         <div className='descriptionbox-description'>
             <p>

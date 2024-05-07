@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react'
 import './css/ShopCategory.css'
 import { ShopContext } from '../Context/ShopContext'
-import dropdown_icon from '../Components/Assets/dropdown_icon.png'
 import Item from '../Components/Item/Item'
 
 export const ShopCategory = (props) => {
@@ -23,7 +22,24 @@ export const ShopCategory = (props) => {
           <span>Showing {start}-{end}</span> out of {all_product.length} products
         </p>
         <div className='shopcategory-sort'>
-          Sort by <img src={dropdown_icon} alt="" />
+          Sort by: 
+          <select>
+            <option value=""> </option>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Animation">Animation</option>
+            <option value="Biography">Biography</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Crime">Crime</option>
+            <option value="Drama">Drama</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="History">History</option>
+            <option value="Horror">Horror</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Thriller">Thriller</option>
+            <option value="War">War</option>
+          </select>
         </div>
       </div>
       <div className='shopcategory-products'>
