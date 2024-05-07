@@ -7,7 +7,9 @@ let data_product = [
   {
     id: 1,
     name: "Tenet",
+    year: "2020",
     category: "streaming",
+    genre: "Action, Sci-Fi, Thriller",
     image: p1_img,
     new_price: 4.99,
     old_price: 9.99,
@@ -15,7 +17,9 @@ let data_product = [
   {
     id: 2,
     name: "Wonder Woman 1984",
+    year: "2020",
     category: "streaming",
+    genre: "Action, Adventure, Fantasy",
     image: p2_img,
     new_price: 4.99,
     old_price: 9.99,
@@ -23,7 +27,9 @@ let data_product = [
   {
     id: 3,
     name: "Soul",
+    year: "2020",
     category: "streaming",
+    genre: "Animation, Adventure, Comedy",
     image: p3_img,
     new_price: 3.49,
     old_price: 9.99,
@@ -31,7 +37,9 @@ let data_product = [
   {
     id: 4,
     name: "Nomadland",
+    year: "2020",
     category: "streaming",
+    genre: "Drama",
     image: p4_img,
     new_price: 4.99,
     old_price: 9.99,

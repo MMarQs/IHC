@@ -38,6 +38,8 @@ let new_collections = [
   {
     id: 8,
     name: "The Trial Of The Chicago 7",
+    year: "2020",
+    genre: "Drama, History, Thriller",
     image: p4_img,
     new_price: 4.49,
     old_price: 9.99,
@@ -45,6 +47,8 @@ let new_collections = [
   {
     id: 15,
     name: "Dune",
+    year: "2021",
+    genre: "Adventure, Drama, Sci-Fi",
     image: p5_img,
     new_price: 6.99,
     old_price: 9.99,
@@ -52,6 +56,8 @@ let new_collections = [
   {
     id: 2,
     name: "Wonder Woman 1984",
+    year: "2020",
+    genre: "Action, Adventure, Fantasy",
     image: p6_img,
     new_price: 4.99,
     old_price: 9.99,
@@ -59,6 +65,8 @@ let new_collections = [
   {
     id: 17,
     name: "A Quiet Place - Part II",
+    year: "2020",
+    genre: "Drama, Horror, Sci-Fi",
     image: p7_img,
     new_price: 3.99,
     old_price: 9.99,
@@ -66,6 +74,8 @@ let new_collections = [
   {
     id: 28,
     name: "Space Jam: A New Legacy",
+    year: "2021",
+    genre: "Animation, Adventure, Comedy",
     image: p8_img,
     new_price: 12.99,
     old_price: 19.99,
