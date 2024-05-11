@@ -53,6 +53,7 @@ let all_product = [
     movie_runtime: "2h 30min",
     movie_rating: "7.5",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=LdOM0x0XDMo",
   },
   {
     id: 2,
@@ -71,6 +72,7 @@ let all_product = [
     movie_runtime: "2h 31min",
     movie_rating: "5.4",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=sfM7_JLk-84",
   },
   {
     id: 3,
@@ -89,6 +91,7 @@ let all_product = [
     movie_runtime: "1h 40min",
     movie_rating: "8.1",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=xOsLIiBStEs",
   },
   {
     id: 4,
@@ -107,6 +110,7 @@ let all_product = [
     movie_runtime: "1h 47min",
     movie_rating: "7.4",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=6sxCFZ8_d84",
   },
   {
     id: 5,
@@ -125,6 +129,7 @@ let all_product = [
     movie_runtime: "1h 49min",
     movie_rating: "6.1",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=kGM4uYZzfu0",
   },
   {
     id: 6,
@@ -143,6 +148,7 @@ let all_product = [
     movie_runtime: "2h 4min",
     movie_rating: "7.1",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=dSBsNeYqh-k",
   },
   {
     id: 7,
@@ -163,6 +169,7 @@ let all_product = [
     movie_runtime: "2h 3min",
     movie_rating: "6.6",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   },
   {
     id: 8,
@@ -181,6 +188,7 @@ let all_product = [
     movie_runtime: "2h 9min",
     movie_rating: "7.8",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=FVb6EdKDBfU",
   },
   {
     id: 9,
@@ -199,6 +207,7 @@ let all_product = [
     movie_runtime: "2h 34min",
     movie_rating: "6.5",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=D5RDTPfsLAI",
   },
   {
     id: 10,
@@ -217,6 +226,7 @@ let all_product = [
     movie_runtime: "1h 58min",
     movie_rating: "6.8",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=0m5m3Yj5Ywk",
   },
   {
     id: 11,
@@ -235,6 +245,7 @@ let all_product = [
     movie_runtime: "2h 11min",
     movie_rating: "7.0",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=5P9V5mG8H7Y",
   },
   {
     id: 12,
@@ -253,6 +264,7 @@ let all_product = [
     movie_runtime: "2h 10min",
     movie_rating: "7.8",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=VFOrGkAvjAE",
   },
   {
     id: 13,
@@ -271,6 +283,7 @@ let all_product = [
     movie_runtime: "2h 6min",
     movie_rating: "7.5",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=sSjtGqRXQ9Y",
   },
   {
     id: 14,
@@ -289,6 +302,7 @@ let all_product = [
     movie_runtime: "1h 53min",
     movie_rating: "6.4",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=odM92ap8_c0",
   },
   {
     id: 15,
@@ -307,6 +321,7 @@ let all_product = [
     movie_runtime: "2h 35min",
     movie_rating: "8.3",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=n9xhJrPXop4",
   },
   {
     id: 16,
@@ -325,6 +340,7 @@ let all_product = [
     movie_runtime: "2h 14min",
     movie_rating: "7.4",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=jpZrVxv1L7g",
   },
   {
     id: 17,
@@ -343,6 +359,7 @@ let all_product = [
     movie_runtime: "1h 37min",
     movie_rating: "7.4",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=BpdDN9d9Jio",
   },
   {
     id: 18,
@@ -361,6 +378,7 @@ let all_product = [
     movie_runtime: "2h 12mim",
     movie_rating: "7.2",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=WI3hecGO_04"
   },
   {
     id: 19,
@@ -379,6 +397,7 @@ let all_product = [
     movie_runtime: "2h 12min",
     movie_rating: "7.6",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=8YjFbMbfXaQ",
   },
   {
     id: 20,
@@ -397,6 +416,7 @@ let all_product = [
     movie_runtime: "2h 14min",
     movie_rating: "6.7",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=Fp9pNPdNwjI",
   },
   {
     id: 21,
@@ -415,6 +435,7 @@ let all_product = [
     movie_runtime: "2h 43min",
     movie_rating: "7.5",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=BIhNsAtPbPI",
   },
   {
     id: 22,
@@ -433,6 +454,7 @@ let all_product = [
     movie_runtime: "2h 28min",
     movie_rating: "8.5",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=rt-2cxAiPJk",
   },
   {
     id: 23,
@@ -451,6 +473,7 @@ let all_product = [
     movie_runtime: "2h 28min",
     movie_rating: "5.7",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=9ix7TUGVYIo",
   },
   {
     id: 24,
@@ -469,6 +492,7 @@ let all_product = [
     movie_runtime: "1h 42min",
     movie_rating: "7.7",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=V5z3cr8AB5g",
   },
   {
     id: 25,
@@ -487,6 +511,7 @@ let all_product = [
     movie_runtime: "1h 47min",
     movie_rating: "7.4",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=1VIZ89FEjYI",
   },
   {
     id: 26,
@@ -505,6 +530,7 @@ let all_product = [
     movie_runtime: "2h 28min",
     movie_rating: "5.8",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=tI1JGPhYBS8",
   },
   {
     id: 27,
@@ -523,6 +549,7 @@ let all_product = [
     movie_runtime: "1h 35min",
     movie_rating: "7.5",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=mYfJxlgR2jw",
   },
   {
     id: 28,
@@ -541,6 +568,7 @@ let all_product = [
     movie_runtime: "1h 55min",
     movie_rating: "4.4",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=olXYZOsXw_o",
   },
   {
     id: 29,
@@ -559,6 +587,7 @@ let all_product = [
     movie_runtime: "2h 10min",
     movie_rating: "6.7",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=VoJc2tH3WBw",
   },
   {
     id: 30,
@@ -577,6 +606,7 @@ let all_product = [
     movie_runtime: "2h 37min",
     movie_rating: "6.7",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=0WVDKZJkGlY",
   },
   {
     id: 31,
@@ -595,6 +625,7 @@ let all_product = [
     movie_runtime: "1h 45min",
     movie_rating: "6.1",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=VqJZb4d7j4E",
   },
   {
     id: 32,
@@ -613,6 +644,7 @@ let all_product = [
     movie_runtime: "1h 55min",
     movie_rating: "7.5",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=X2m-08cOAbc",
   },
   {
     id: 33,
@@ -631,6 +663,7 @@ let all_product = [
     movie_runtime: "2h 32min",
     movie_rating: "7.4",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=Q2WueoM1Jzg",
   },
   {
     id: 34,
@@ -649,6 +682,7 @@ let all_product = [
     movie_runtime: "1h 45min",
     movie_rating: "6.1",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=VqJZb4d7j4E",
   },
   {
     id: 35,
@@ -667,6 +701,7 @@ let all_product = [
     movie_runtime: "1h 48min",
     movie_rating: "5.4",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=9Z9j8kQ7J5s",
   },
   {
     id: 36,
@@ -685,6 +720,7 @@ let all_product = [
     movie_runtime: "2h 11min",
     movie_rating: "7.6",
     review_count: Math.floor(Math.random() * 800) + 100,
+    movie_trailer: "https://www.youtube.com/watch?v=Jz4M6QdJ5KI",
   },
 ];
 

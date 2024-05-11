@@ -63,7 +63,11 @@ const ShopContextProvider = (props) => {
         <Link to="/"></Link>
     }
 
-    const contextValue = {getTotalCartAmount, getTotalCartItems, all_product, cartItems, addToCart, removeFromCart};
+    const trailer = (id) => {
+        return all_product.find((product) => product.id === id).trailer;
+    }
+
+    const contextValue = {getTotalCartAmount, getTotalCartItems, all_product, cartItems, addToCart, removeFromCart, trailer, addPromoCode, checkout};
     return (
         <ShopContext.Provider value={contextValue}>
             {props.children}
