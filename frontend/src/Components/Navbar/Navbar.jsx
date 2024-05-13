@@ -11,8 +11,6 @@ export const Navbar = () => {
     const { getTotalCartItems } = useContext(ShopContext);
     const [menu, setMenu] = useState("shop");
 
-    const [results, setResults] = useState([]);
-
     return (
     <div className='navbar'>
         <div className='nav-logo'>
