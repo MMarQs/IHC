@@ -11,6 +11,8 @@ export const ProductDisplay = (props) => {
     const [selectedOption, setSelectedOption] = useState('streaming');
     const price = selectedOption === 'streaming' ? product.streaming_price : product.physical_price;
     const old_price = selectedOption === 'streaming' ? product.streaming_old_price : product.physical_old_price;
+    product.price = selectedOption === 'streaming' ? product.streaming_price : product.physical_price;
+    product.category = selectedOption === 'streaming' ? 'Streaming' : 'Physical Copy';
 
     const renderStars = (rating) => {
         let stars = [];
