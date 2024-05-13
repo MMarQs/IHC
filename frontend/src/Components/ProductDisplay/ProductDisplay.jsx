@@ -3,6 +3,7 @@ import './ProductDisplay.css'
 import star_icon from '../Assets/star_icon.png'
 import half_star_icon from '../Assets/half_star_icon.png'
 import star_dull_icon from '../Assets/star_dull_icon.png'
+import youtube_icon from '../Assets/yt_icon.png'
 import { ShopContext } from '../../Context/ShopContext'
 
 
@@ -69,24 +70,25 @@ export const ProductDisplay = (props) => {
                 <p className='productdisplay-right-movie-stars'><span>Movie Stars: </span>{product.movie_stars}</p>
                 <p className='productdisplay-right-movie-director'><span>Director: </span>{product.movie_director}</p>
                 <p className='productdisplay-right-movie-runtime'><span>Runtime: </span>{product.movie_runtime}</p>
+                {product.movie_trailer && (    
+                    <button className="trailer-button"  onClick={() => window.open(product.movie_trailer, "_blank", "noopener,noreferrer")} target="_blank" rel="noopener noreferrer">
+                        <p>Watch Trailer</p> 
+                        <img src={youtube_icon} alt=''/> 
+                    </button> 
+                )}
             </div>
             <div className='productdisplay-right-size'>
                 <h1>Select Type</h1>
                 <div className='productdisplay-right-sizes'>
-                <div style={{ background: selectedOption === 'streaming' ? '#656565' : '#fbfbfb' }} onClick={() => setSelectedOption('streaming')}>
+                <div style={{ background: selectedOption === 'streaming' ? '#656565' : '#fbfbfb', color: selectedOption === 'streaming' ? '#dedede' : '#000000'}} onClick={() => setSelectedOption('streaming')}>
                     Streaming
                 </div>
-                <div style={{ background: selectedOption === 'physical' ? '#656565' : '#fbfbfb' }} onClick={() => setSelectedOption('physical')}>
+                <div style={{ background: selectedOption === 'physical' ? '#656565' : '#fbfbfb',color: selectedOption === 'physical' ? '#dedede' : '#000000'}} onClick={() => setSelectedOption('physical')}>
                     Physical Copy
                 </div>
                 </div>
             </div>
             <div className='productdisplay-buttons'>
-                {product.movie_trailer && (
-                    <a href={product.movie_trailer} target="_blank" rel="noopener noreferrer">
-                        <button>TRAILER</button>
-                    </a>
-                )}
                 <button onClick={() => {addToCart(product.id)}}>ADD TO CART</button>
             </div>
         </div>
