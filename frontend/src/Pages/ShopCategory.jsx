@@ -8,19 +8,36 @@ export const ShopCategory = (props) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedGenre, setSelectedGenre] = useState('');
+  const [selectedYear, setSelectedYear] = useState('');
+  const [sortOrder, setSortOrder] = useState('');
+  const [priceSortOrder, setPriceSortOrder] = useState('');
   const itemsPerPage = 16;
-  
 
   const filteredProducts = all_product.filter(product => {
     const nameMatchesSearch = !searchQuery || product.name.toLowerCase().includes(searchQuery.toLowerCase());
     const genreMatchesFilter = !selectedGenre || product.genre.toLowerCase().includes(selectedGenre.toLowerCase());
-    return nameMatchesSearch && genreMatchesFilter;
+    const yearMatchesFilter = !selectedYear || product.year === selectedYear;
+    return nameMatchesSearch && genreMatchesFilter && yearMatchesFilter;
   });
 
-  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+  let sortedProducts = filteredProducts.slice(); 
+
+  if (sortOrder === 'highest') {
+    sortedProducts.sort((a, b) => b.movie_rating - a.movie_rating); 
+  } else if (sortOrder === 'lowest') {
+    sortedProducts.sort((a, b) => a.movie_rating - b.movie_rating); 
+  }
+
+  if (priceSortOrder === 'highest') {
+    sortedProducts.sort((a, b) => b.streaming_price - a.streaming_price);
+  } else if (priceSortOrder === 'lowest') {
+    sortedProducts.sort((a, b) => a.streaming_price - b.streaming_price); 
+  }
+
+  const totalPages = Math.ceil(sortedProducts.length / itemsPerPage);
   const start = ((currentPage - 1) * itemsPerPage) + 1;
-  const end = Math.min(currentPage * itemsPerPage, filteredProducts.length);
-  
+  const end = Math.min(currentPage * itemsPerPage, sortedProducts.length);
+
   const loadPage = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -32,7 +49,22 @@ export const ShopCategory = (props) => {
 
   const handleGenreChange = (event) => {
     setSelectedGenre(event.target.value);
-    setCurrentPage(1); 
+    setCurrentPage(1);
+  };
+
+  const handleYearChange = (event) => {
+    setSelectedYear(event.target.value);
+    setCurrentPage(1);
+  };
+
+  const handleSortOrderChange = (event) => {
+    setSortOrder(event.target.value);
+    setCurrentPage(1);
+  };
+
+  const handlePriceSortOrderChange = (event) => {
+    setPriceSortOrder(event.target.value);
+    setCurrentPage(1);
   };
 
   return (
@@ -47,7 +79,7 @@ export const ShopCategory = (props) => {
           />
         </div>
         <div className='shopcategory-sort'>
-          Sort by Genre: 
+          Sort by Genre:
           <select value={selectedGenre} onChange={handleGenreChange}>
             <option value="">All</option>
             <option value="Action">Action</option>
@@ -66,20 +98,45 @@ export const ShopCategory = (props) => {
             <option value="War">War</option>
           </select>
         </div>
+        <div className='shopcategory-sort'>
+          Sort by Year:
+          <select value={selectedYear} onChange={handleYearChange}>
+            <option value="">All</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select>
+        </div>
+        <div className='shopcategory-sort'>
+          Sort Order by Rating:
+          <select value={sortOrder} onChange={handleSortOrderChange}>
+            <option value="">None</option>
+            <option value="highest">Highest Rating</option>
+            <option value="lowest">Lowest Rating</option>
+          </select>
+        </div>
+        <div className='shopcategory-sort'>
+          Sort Order by Price:
+          <select value={priceSortOrder} onChange={handlePriceSortOrderChange}>
+            <option value="">None</option>
+            <option value="highest">Highest Price</option>
+            <option value="lowest">Lowest Price</option>
+          </select>
+        </div>
         <p>
           <span>Showing {start}-{end}</span> out of {filteredProducts.length} products
         </p>
       </div>
       <div className='shopcategory-products'>
-        {filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((item, i) => {
-          return <Item key={i} id={item.id} name={item.name} image={item.image} streaming_price={item.streaming_price} streaming_old_price={item.streaming_old_price}/>;
+        {sortedProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((item, i) => {
+          return <Item key={i} id={item.id} name={item.name} image={item.image} streaming_price={item.streaming_price} streaming_old_price={item.streaming_old_price} />;
         })}
-      </div> 
+      </div>
 
       <div className='shopcategory-pagination'>
         {[...Array(totalPages).keys()].map((page) => (
-          <button 
-            key={page} 
+          <button
+            key={page}
             onClick={() => loadPage(page + 1)}
             className={currentPage === page + 1 ? 'active' : ''}
           >
