@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
-import new_collections from '../Assets/new_collections';
+import new_collections from '../Assets/all_product';
 
 export const SearchBar = ({ setResults }) => {
   const [input, setInput] = useState('');
