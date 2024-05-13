@@ -4,27 +4,43 @@ import { ShopContext } from '../Context/ShopContext'
 import Item from '../Components/Item/Item'
 
 export const ShopCategory = (props) => {
-  const {all_product} = useContext(ShopContext);
+  const { all_product } = useContext(ShopContext);
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedCategory, setSelectedCategory] = useState(""); // New state for selected category
   const itemsPerPage = 16;
-  const totalPages = Math.ceil(all_product.length / itemsPerPage);
+  
+  // Function to filter products based on selected category
+  const filteredProducts = all_product.filter(product => {
+    if (!selectedCategory) {
+      return true; // If no category is selected, show all products
+    }
+    // Check if product's genre includes the selected category
+    return product.genre.includes(selectedCategory);
+  });
+
+  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
   const start = ((currentPage - 1) * itemsPerPage) + 1;
-  const end = Math.min(currentPage * itemsPerPage, all_product.length);
+  const end = Math.min(currentPage * itemsPerPage, filteredProducts.length);
   
   const loadPage = (pageNumber) => {
     setCurrentPage(pageNumber);
+  };
+
+  const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+    setCurrentPage(1); // Reset current page when category changes
   };
 
   return (
     <div className='shop-category'>
       <div className='shopcategory-indexSort'>
         <p>
-          <span>Showing {start}-{end}</span> out of {all_product.length} products
+          <span>Showing {start}-{end}</span> out of {filteredProducts.length} products
         </p>
         <div className='shopcategory-sort'>
           Sort by: 
-          <select>
-            <option value=""> </option>
+          <select onChange={handleCategoryChange} value={selectedCategory}>
+            <option value="">All</option>
             <option value="Action">Action</option>
             <option value="Adventure">Adventure</option>
             <option value="Animation">Animation</option>
@@ -43,7 +59,7 @@ export const ShopCategory = (props) => {
         </div>
       </div>
       <div className='shopcategory-products'>
-        {all_product.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((item, i) => {
+        {filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((item, i) => {
           return <Item key={i} id={item.id} name={item.name} image={item.image} streaming_price={item.streaming_price} streaming_old_price={item.streaming_old_price}/>;
         })}
       </div> 
