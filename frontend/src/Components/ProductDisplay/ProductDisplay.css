@@ -111,3 +111,8 @@
 .productdisplay-right-movie-runtime span{
     font-weight: 600;
 }
+
+.productdisplay-buttons {
+    display: flex;
+    gap: 20px;
+}

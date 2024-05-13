@@ -11,7 +11,7 @@ export const LoginSignup = () => {
           <input type="email" placeholder="Your Email" />
           <input type="password" placeholder="Your Password" />
         </div>
-        <button>Continue</button>
+        <a href='/'><button>Continue</button></a>
         <p className='loginsignup-login'>Already have an account? <span>Login here</span></p>
         <div className='loginsignup-agree'>
           <input type="checkbox" name='' id=''/>
