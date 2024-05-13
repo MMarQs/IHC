@@ -15,6 +15,12 @@
     font-weight: 600;
 }
 
+.shopcategory-search {
+  border-radius: 10px;
+  box-shadow: 0 0 8px #ddd;
+  padding: 10px;
+}
+
 .shopcategory-products {
     margin: 20px 170px;
     display: grid;
