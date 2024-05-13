@@ -1,21 +1,20 @@
-import React, { useContext, useState } from 'react'
-import './css/ShopCategory.css'
-import { ShopContext } from '../Context/ShopContext'
-import Item from '../Components/Item/Item'
+import React, { useContext, useState } from 'react';
+import './css/ShopCategory.css';
+import { ShopContext } from '../Context/ShopContext';
+import Item from '../Components/Item/Item';
 
 export const ShopCategory = (props) => {
   const { all_product } = useContext(ShopContext);
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedCategory, setSelectedCategory] = useState(""); // New state for selected category
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedGenre, setSelectedGenre] = useState('');
   const itemsPerPage = 16;
   
-  // Function to filter products based on selected category
+
   const filteredProducts = all_product.filter(product => {
-    if (!selectedCategory) {
-      return true; // If no category is selected, show all products
-    }
-    // Check if product's genre includes the selected category
-    return product.genre.includes(selectedCategory);
+    const nameMatchesSearch = !searchQuery || product.name.toLowerCase().includes(searchQuery.toLowerCase());
+    const genreMatchesFilter = !selectedGenre || product.genre.toLowerCase().includes(selectedGenre.toLowerCase());
+    return nameMatchesSearch && genreMatchesFilter;
   });
 
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
@@ -26,20 +25,30 @@ export const ShopCategory = (props) => {
     setCurrentPage(pageNumber);
   };
 
-  const handleCategoryChange = (event) => {
-    setSelectedCategory(event.target.value);
-    setCurrentPage(1); // Reset current page when category changes
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+    setCurrentPage(1);
+  };
+
+  const handleGenreChange = (event) => {
+    setSelectedGenre(event.target.value);
+    setCurrentPage(1); 
   };
 
   return (
     <div className='shop-category'>
       <div className='shopcategory-indexSort'>
-        <p>
-          <span>Showing {start}-{end}</span> out of {filteredProducts.length} products
-        </p>
+        <div className='shopcategory-search'>
+          <input
+            type='text'
+            placeholder='Search...'
+            value={searchQuery}
+            onChange={handleSearchChange}
+          />
+        </div>
         <div className='shopcategory-sort'>
-          Sort by: 
-          <select onChange={handleCategoryChange} value={selectedCategory}>
+          Sort by Genre: 
+          <select value={selectedGenre} onChange={handleGenreChange}>
             <option value="">All</option>
             <option value="Action">Action</option>
             <option value="Adventure">Adventure</option>
@@ -57,6 +66,9 @@ export const ShopCategory = (props) => {
             <option value="War">War</option>
           </select>
         </div>
+        <p>
+          <span>Showing {start}-{end}</span> out of {filteredProducts.length} products
+        </p>
       </div>
       <div className='shopcategory-products'>
         {filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((item, i) => {
@@ -76,7 +88,7 @@ export const ShopCategory = (props) => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ShopCategory
+export default ShopCategory;
