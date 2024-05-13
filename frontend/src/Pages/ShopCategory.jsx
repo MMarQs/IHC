@@ -78,50 +78,53 @@ export const ShopCategory = (props) => {
             onChange={handleSearchChange}
           />
         </div>
-        <div className='shopcategory-sort'>
-          Sort by Genre:
-          <select value={selectedGenre} onChange={handleGenreChange}>
-            <option value="">All</option>
-            <option value="Action">Action</option>
-            <option value="Adventure">Adventure</option>
-            <option value="Animation">Animation</option>
-            <option value="Biography">Biography</option>
-            <option value="Comedy">Comedy</option>
-            <option value="Crime">Crime</option>
-            <option value="Drama">Drama</option>
-            <option value="Fantasy">Fantasy</option>
-            <option value="History">History</option>
-            <option value="Horror">Horror</option>
-            <option value="Mystery">Mystery</option>
-            <option value="Sci-Fi">Sci-Fi</option>
-            <option value="Thriller">Thriller</option>
-            <option value="War">War</option>
-          </select>
-        </div>
-        <div className='shopcategory-sort'>
-          Sort by Year:
-          <select value={selectedYear} onChange={handleYearChange}>
-            <option value="">All</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-          </select>
-        </div>
-        <div className='shopcategory-sort'>
-          Sort Order by Rating:
-          <select value={sortOrder} onChange={handleSortOrderChange}>
-            <option value="">None</option>
-            <option value="highest">Highest Rating</option>
-            <option value="lowest">Lowest Rating</option>
-          </select>
-        </div>
-        <div className='shopcategory-sort'>
-          Sort Order by Price:
-          <select value={priceSortOrder} onChange={handlePriceSortOrderChange}>
-            <option value="">None</option>
-            <option value="highest">Highest Price</option>
-            <option value="lowest">Lowest Price</option>
-          </select>
+        <div className='shopcategory-sort-wrapper'>
+          <p>Sort by</p>
+          <div className='shopcategory-sort'>
+              Genre:
+              <select value={selectedGenre} onChange={handleGenreChange}>
+              <option value="">All</option>
+              <option value="Action">Action</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Animation">Animation</option>
+              <option value="Biography">Biography</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Crime">Crime</option>
+              <option value="Drama">Drama</option>
+              <option value="Fantasy">Fantasy</option>
+              <option value="History">History</option>
+              <option value="Horror">Horror</option>
+              <option value="Mystery">Mystery</option>
+              <option value="Sci-Fi">Sci-Fi</option>
+              <option value="Thriller">Thriller</option>
+              <option value="War">War</option>
+            </select>
+          </div>
+          <div className='shopcategory-sort'>
+            Year:
+            <select value={selectedYear} onChange={handleYearChange}>
+              <option value="">All</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+            </select>
+          </div>
+          <div className='shopcategory-sort'>
+            Rating:
+            <select value={sortOrder} onChange={handleSortOrderChange}>
+              <option value="">None</option>
+              <option value="highest">Highest to Lowest</option>
+              <option value="lowest">Lowest to Highest</option>
+            </select>
+          </div>
+          <div className='shopcategory-sort'>
+            Price:
+            <select value={priceSortOrder} onChange={handlePriceSortOrderChange}>
+              <option value="">None</option>
+              <option value="highest">Highest to Lowest</option>
+              <option value="lowest">Lowest to Highest</option>
+            </select>
+          </div>
         </div>
         <p>
           <span>Showing {start}-{end}</span> out of {filteredProducts.length} products
