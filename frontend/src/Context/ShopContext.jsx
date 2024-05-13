@@ -2,7 +2,9 @@ import React, { createContext } from "react";
 import all_product from "../Components/Assets/all_product";
 import { useState } from "react";
 
+
 export const ShopContext = createContext(null);
+
 const getDefaultCart = () => {
     let cart = {};
     for (let index = 0; index < all_product.length + 1; index++) {
@@ -23,16 +25,28 @@ const ShopContextProvider = (props) => {
         setCartItems((prev) => ({...prev, [itemId]: prev[itemId] - 1}));
     }
 
-    const getTotalCartAmount = () => {
+    const getTotalCartAmount = (promoCode) => {
         let totalAmount = 0;
+        let totalAmount1 = 0;
         for (const item in cartItems) {
-            if (cartItems[item] > 0)
-            {
+            if (cartItems[item] > 0) {
                 let itemInfo = all_product.find((product) => product.id === Number(item));
-                totalAmount += itemInfo.price * cartItems[item];
+                totalAmount1 += itemInfo.price * cartItems[item];
             }
         }
-        return totalAmount;
+    
+        let discount = 0;
+        if (promoCode === "blockbuster10" || promoCode === "IHC") {
+            discount = totalAmount1 * 0.1;
+            totalAmount = 0.9 * totalAmount1;
+        } else if (promoCode === "freewtf") {
+            discount = totalAmount1 * 1;
+            totalAmount = 0 * totalAmount1;
+        } else {
+            totalAmount = totalAmount1;
+        }
+    
+        return [totalAmount.toFixed(2), discount.toFixed(2), totalAmount1.toFixed(2)];
     }
 
     const getTotalCartItems = () => {
@@ -46,22 +60,13 @@ const ShopContextProvider = (props) => {
         return totalItems;
     }
 
-    const addPromoCode = (promoCode) => {
-        if (promoCode === "blockbuster10" || promoCode === "IHC") {
-            alert("Promo code applied successfully!");
-            return getTotalCartAmount() * 0.9;
-        } else {
-            alert("Invalid promo code!");
-        }
-        return getTotalCartAmount();
-    }
-
     const checkout = () => {
         alert("Checkout successful!");
         setCartItems(getDefaultCart());
+        window.location.href = "/";
     }
 
-    const contextValue = {getTotalCartAmount, getTotalCartItems, all_product, cartItems, addToCart, removeFromCart, addPromoCode, checkout};
+    const contextValue = {getTotalCartAmount, getTotalCartItems, all_product, cartItems, addToCart, removeFromCart, checkout};
     return (
         <ShopContext.Provider value={contextValue}>
             {props.children}

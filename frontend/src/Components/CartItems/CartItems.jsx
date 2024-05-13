@@ -5,8 +5,9 @@ import remove_icon from '../Assets/cart_cross_icon.png'
 import { useState } from 'react'
 
 export const CartItems = () => {
-    const {getTotalCartAmount, all_product, cartItems, removeFromCart, addPromoCode, checkout} = useContext(ShopContext)
-    const [promoCode, setPromoCode] = useState('');
+    const {getTotalCartAmount, all_product, cartItems, removeFromCart, checkout} = useContext(ShopContext)
+    const [promocode, setPromoCode] = useState('');
+    const [totalAmount, discount, totalAmount1] = getTotalCartAmount(promocode);
 
     const handleInputChange = (event) => {
         setPromoCode(event.target.value);
@@ -48,7 +49,7 @@ export const CartItems = () => {
                     <div>
                         <div className='cartitems-total-item'>
                             <p>Subtotal</p>
-                            <p>€{getTotalCartAmount()}</p>
+                            <p>€{totalAmount1}</p>
                         </div>
                         <hr/>
                         <div className='cartitems-total-item'>
@@ -57,8 +58,12 @@ export const CartItems = () => {
                         </div>
                         <hr/>
                         <div className='cartitems-total-item'>
+                            <p>Discount</p>
+                            <p>€{discount}</p>
+                        </div>
+                        <div className='cartitems-total-item'>
                             <h3>Total</h3>
-                            <h3>€{getTotalCartAmount()}</h3>
+                            <h3>€{totalAmount}</h3>
                         </div>
                     </div>
                     <button onClick={() => checkout()}>PROCEED TO CHECKOUT</button>
@@ -66,8 +71,7 @@ export const CartItems = () => {
                 <div className='cartitems-promocode'>
                     <p>If you have a promo code, enter it here</p>
                     <div className='cartitems-promobox'>
-                        <input type='text' placeholder='Promo code' value={promoCode} onChange={handleInputChange}/>
-                        <button onClick={() => addPromoCode(promoCode)}>Submit</button>
+                        <input type='text' placeholder='Promo code' value={promocode} onChange={handleInputChange}/>
                     </div>
                 </div>
             </div>
