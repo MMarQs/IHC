@@ -1,10 +1,10 @@
 .offers {
-    width: 65%;
+    width: 80%;
     height: 60vh;
     display: flex;
     margin: auto;
     padding: 60px 140px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     background: linear-gradient(180deg, #063daa 0%, #e1ffea22 60%);   
 }
 
@@ -29,7 +29,7 @@
 
 .offers-check-btn {
     width: 200px;
-    height: 90px;
+    height: 40px;
     border-radius: 35px;
     background: #ff4141;
     border: none;
@@ -39,7 +39,7 @@
     margin-top: 30px;
     cursor: pointer;
     padding-left: 40px;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
 }
 
