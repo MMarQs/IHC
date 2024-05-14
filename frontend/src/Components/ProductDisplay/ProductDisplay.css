@@ -1,8 +1,6 @@
 .productdisplay {
     display: flex;
     margin: 0px 170px;
-    width: 95%;
-    margin-left: 75px;
 }
 
 .productdisplay-left {
@@ -17,12 +15,12 @@
 }
 
 .productdisplay-img-list img {
-    height: 161px;
+    height: 163px;
 }
 
 .productdisplay-main-img {
     width: 586px;
-    height: 692px;
+    height: 699px;
 }
 
 .productdisplay-right {
@@ -95,11 +93,6 @@
     border: none;
     outline: none;
     cursor: pointer;
-}
-
-.productdisplay-right button:hover {
-    background: #fc7373;
-    color: white;
 }
 
 .productdisplay-right-description button {

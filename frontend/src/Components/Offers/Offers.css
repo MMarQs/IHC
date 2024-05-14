@@ -3,7 +3,7 @@
     height: 60vh;
     display: flex;
     margin: auto;
-    padding: 60px 140px;
+    padding: 0px 140px;
     margin-bottom: 150px;
     background: linear-gradient(180deg, #063daa 0%, #e1ffea22 60%);   
 }
@@ -27,9 +27,9 @@
     font-weight: 600;
 }
 
-.offers-check-btn {
-    width: 200px;
-    height: 90px;
+.offers-left button {
+    width: 282px;
+    height: 70px;
     border-radius: 35px;
     background: #ff4141;
     border: none;
@@ -38,19 +38,6 @@
     font-weight: 500;
     margin-top: 30px;
     cursor: pointer;
-    padding-left: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.offers-check-btn a{
-    text-decoration: none;
-    color: white;
-}
-
-.offers-check-btn:hover {
-    background: #fc7373;
-    color: white;
 }
 
 .offers-right {
