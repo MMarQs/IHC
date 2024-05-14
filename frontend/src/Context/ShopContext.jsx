@@ -35,18 +35,22 @@ const ShopContextProvider = (props) => {
             }
         }
     
-        let discount = 0;
+        let discount = 0, percentage = "", promoApplied = false;
         if (promoCode === "blockbuster10" || promoCode === "IHC") {
             discount = totalAmount1 * 0.1;
             totalAmount = 0.9 * totalAmount1;
+            percentage = "10%";
+            promoApplied = true;
         } else if (promoCode === "freewtf") {
             discount = totalAmount1 * 1;
             totalAmount = 0 * totalAmount1;
+            percentage = "100%";
+            promoApplied = true;
         } else {
             totalAmount = totalAmount1;
         }
     
-        return [totalAmount.toFixed(2), discount.toFixed(2), totalAmount1.toFixed(2)];
+        return [totalAmount.toFixed(2), discount.toFixed(2), totalAmount1.toFixed(2), percentage, promoApplied];
     }
 
     const getTotalCartItems = () => {

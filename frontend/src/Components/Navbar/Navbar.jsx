@@ -17,7 +17,7 @@ export const Navbar = () => {
             <Link to="/">
                 <img className="nav-logo-img" src={logo} alt="Logo" />
             </Link>
-            <p>BLOCKBUSTER</p>
+            <a href='/'><p>BLOCKBUSTER</p></a>
         </div>
         <ul className='nav-menu'>
             <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration: 'none' }} to="/">Shop</Link>{menu === "shop" ? <hr/> : <></>}</li>

@@ -1,5 +1,5 @@
 .cartitems {
-    margin: 100px 170px;
+    margin: 60px 170px;
 }
 
 .cartitems hr {
@@ -43,7 +43,7 @@
 
 .cartitems-down {
     display: flex;
-    margin: 100px 0px;
+    margin: 60px 0px;
 }
 
 .cartitems-total {
@@ -78,8 +78,15 @@
     font-weight: 500;
 }
 
-.cartitems-promocode p {
+.cartitems-promocode h3 {
     color: #555;
+}
+
+.cartitems-promocode p {
+    font-size: 16px;
+    font-weight: 500;
+    color: green;
+    margin-top: 10px; 
 }
 
 .cartitems-promobox {

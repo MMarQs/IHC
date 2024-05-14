@@ -7,7 +7,7 @@ import { useState } from 'react'
 export const CartItems = () => {
     const {getTotalCartAmount, all_product, cartItems, removeFromCart, checkout} = useContext(ShopContext)
     const [promocode, setPromoCode] = useState('');
-    const [totalAmount, discount, totalAmount1] = getTotalCartAmount(promocode);
+    const [totalAmount, discount, totalAmount1, percentage, promoApplied] = getTotalCartAmount(promocode);
 
     const handleInputChange = (event) => {
         setPromoCode(event.target.value);
@@ -69,9 +69,10 @@ export const CartItems = () => {
                     <button onClick={() => checkout()}>PROCEED TO CHECKOUT</button>
                 </div>
                 <div className='cartitems-promocode'>
-                    <p>If you have a promo code, enter it here</p>
+                    <h3>If you have a promo code, enter it here</h3>
                     <div className='cartitems-promobox'>
                         <input type='text' placeholder='Promo code' value={promocode} onChange={handleInputChange}/>
+                        {promoApplied && <p>The promocode has been applied! ({percentage})</p>}
                     </div>
                 </div>
             </div>

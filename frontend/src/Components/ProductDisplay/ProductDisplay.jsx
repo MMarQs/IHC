@@ -51,18 +51,11 @@ export const ProductDisplay = (props) => {
         </div>
         <div className='productdisplay-right'>
             <h1>{product.name}</h1>
+            <p className='productdisplay-right-category'><span></span>({product.category})</p>
             <div className='productdisplay-right-star'>
                 {(product.movie_rating / 2).toFixed(1)}
                 {renderStars(product.movie_rating/2)}
                 <p>({product.review_count})</p>
-            </div>
-            <div className='productdisplay-right-prices'>
-                <div className='productdisplay-right-price-old'>
-                    €{old_price}
-                </div>
-                <div className='productdisplay-right-price-new'>
-                    €{price}
-                </div>
             </div>
             <div className='productdisplay-right-description'>
                 {product.movie_description}
@@ -86,6 +79,14 @@ export const ProductDisplay = (props) => {
                 <div style={{ background: selectedOption === 'physical' ? '#656565' : '#fbfbfb',color: selectedOption === 'physical' ? '#dedede' : '#000000'}} onClick={() => setSelectedOption('physical')}>
                     Physical Copy
                 </div>
+                </div>
+            </div>
+            <div className='productdisplay-right-prices'>
+                <div className='productdisplay-right-price-old'>
+                    €{old_price}
+                </div>
+                <div className='productdisplay-right-price-new'>
+                    €{price}
                 </div>
             </div>
             <div className='productdisplay-buttons'>

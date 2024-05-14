@@ -20,7 +20,7 @@ export const Hero = () => {
             </div>
             <div className='hero-latest-btn'>
                 <Link to="/movies">
-                    <a>Latest movies</a>
+                    <a href='/movies'>Search movies</a>
                     <img src={arrow_icon} alt=''/>
                 </Link>
             </div>

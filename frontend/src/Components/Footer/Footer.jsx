@@ -4,13 +4,16 @@ import footer_logo from '../Assets/logo.png'
 import instagram_icon from '../Assets/instagram_icon.png'
 import pinterest_icon from '../Assets/pintester_icon.png'
 import whatsapp_icon from '../Assets/whatsapp_icon.png'
+import { Link } from 'react-router-dom'
 
 export const Footer = () => {
   return (
     <div className='footer'>
         <div className='footer-logo'>
-            <img src={footer_logo} alt=''/>
-            <p>BlockBuster</p>
+            <Link>
+                <img src={footer_logo} alt=''/>
+            </Link>
+            <a href='/'><p>BlockBuster</p></a>
         </div>
         <ul className='footer-links'>
             <li>Company</li>
