@@ -51,6 +51,21 @@
     font-weight: 500;
 }
 
+.hero-latest-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero-latest-btn img{
+    padding-left: 10px;
+}
+
+.hero-latest-btn:hover{
+    background: #fc7373;
+    color: white;
+    cursor: pointer;
+}
+
 .hero-right{
     flex: 1;
     display: flex;

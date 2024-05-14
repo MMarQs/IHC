@@ -13,10 +13,7 @@ export const LoginSignup = () => {
         </div>
         <a href='/'><button>Continue</button></a>
         <p className='loginsignup-login'>Already have an account? <span>Login here</span></p>
-        <div className='loginsignup-agree'>
-          <input type="checkbox" name='' id=''/>
-          <p>By continuing, I agree to the terms of use & privacy policy.</p>
-        </div>
+        <p className='loginsignup-terms'><input type="checkbox" name='' id=''/> By continuing, I agree to the terms of use & privacy policy.</p>
       </div>
     </div>
   )

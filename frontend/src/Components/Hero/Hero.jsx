@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css'
+import { Link } from 'react-router-dom'
 import camera_icon from '../Assets/camera_icon.png'
 import arrow_icon from '../Assets/arrow.png'
 import hero_img from '../Assets/hero_image.png'
@@ -18,8 +19,10 @@ export const Hero = () => {
                 <p>for everyone</p>
             </div>
             <div className='hero-latest-btn'>
-                <div>Latest movies</div>
-                <img src={arrow_icon} alt=''/>
+                <Link to="/movies">
+                    <a>Latest movies</a>
+                    <img src={arrow_icon} alt=''/>
+                </Link>
             </div>
         </div>
         <div className='hero-right'>
