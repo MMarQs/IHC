@@ -47,7 +47,7 @@
 }
 
 .shopcategory-products {
-  margin: 20px 170px;
+  margin: 20px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 80px;
@@ -106,7 +106,6 @@ input {
   border: none;
   height: 100%;
   font-size: 1.25rem;
-  width: 100%;
 }
 
 input:focus {
