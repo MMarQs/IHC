@@ -12,7 +12,7 @@ export const Offers = () => {
             <p>ONLY ON BEST SELLERS PRODUCTS</p>
             <div className='offers-check-btn'>
                 <Link to="/movies">
-                    <a>Check Offers</a>
+                    <a href='/movies'>Check Offers</a>
                 </Link>
             </div>
         </div>  
