@@ -20,7 +20,7 @@ export const Navbar = () => {
             <a href='/'><p>BLOCKBUSTER</p></a>
         </div>
         <ul className='nav-menu'>
-            <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration: 'none' }} to="/">Shop</Link>{menu === "shop" ? <hr/> : <></>}</li>
+            <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration: 'none' }} to="/">Home</Link>{menu === "shop" ? <hr/> : <></>}</li>
             <li onClick={()=>{setMenu("movies")}}><Link style={{ textDecoration: 'none' }} to="/movies">Movies</Link>{menu === "movies" ? <hr/> : <></>}</li>
         </ul>
         <div className='nav-login-cart'>
